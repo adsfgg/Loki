@@ -31,7 +31,7 @@ balance_lua_file="$(load_config_entry balance_lua_file | cut -c 5-)"
 mkdir -p "src/lua/$mod_name/"
 
 # Setup Balance.lua
-filepath="src/$mod_name/Balance.lua"
+filepath="src/lua/$mod_name/Balance.lua"
 touch $filepath
 echo "-- Place your Balance.lua changes here" >> $filepath
 echo "" >> $filepath
