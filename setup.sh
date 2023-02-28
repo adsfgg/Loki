@@ -10,13 +10,13 @@ mkdir $buildDir
 
 cp -r $sourceDir/* $buildDir/
 cp $sourceDir/.gitignore $buildDir/
+cp -r configs $buildDir/configs
 
 mkdir $buildDir/src
 mkdir $buildDir/launchpad
 mkdir $buildDir/launchpad/beta
 mkdir $buildDir/launchpad/release
 mkdir $buildDir/docs-data
-mkdir $buildDir/cfg
 mkdir $buildDir/docs
 
 cd $buildDir

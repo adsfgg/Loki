@@ -5,7 +5,6 @@
     "mod_src_dir": "src/lua/MyMod",
     "filehooks_path": "src/lua/MyMod_FileHooks.lua",
     "balance_lua_file": "src/lua/MyMod/Globals/Balance.lua",
-    "ns2_install_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Natural Selection 2",
     "build_dir": "build",
     "launchpad_data_dir": "launchpad",
     "revision_variable": "g_myModRevision",
