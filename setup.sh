@@ -17,7 +17,7 @@ cp .gitignore $build_dir/.gitignore
 
 mkdir $build_dir/src
 mkdir $build_dir/docs-data
-mkdir $build_dir/docs
+mkdir -p $build_dir/docs/revisions
 
 cd $build_dir
 python3 scripts/docugen.py init
