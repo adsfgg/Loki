@@ -1,4 +1,4 @@
-name        = "MyMod"
+name        = "%mod_name%"
 source_dir  = "source/"
 output_dir  = "output/"
 description = [=[

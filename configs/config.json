@@ -2,13 +2,13 @@
     "mod_name": "MyMod",
     "src_dir": "src",
     "lua_dir": "src/lua",
-    "mod_src_dir": "src/lua/MyMod",
-    "filehooks_path": "src/lua/MyMod_FileHooks.lua",
-    "balance_lua_file": "src/lua/MyMod/Globals/Balance.lua",
+    "mod_src_dir": "src/lua/%mod_name%",
+    "filehooks_path": "src/lua/%mod_name%_FileHooks.lua",
+    "balance_lua_file": "src/lua/%mod_name%/Globals/Balance.lua",
     "build_dir": "build",
     "launchpad_data_dir": "launchpad",
-    "revision_variable": "g_myModRevision",
-    "beta_revision_variable": "g_myModBeta",
+    "revision_variable": "g_%mod_name_first_word_lower%Revision",
+    "beta_revision_variable": "g_%mod_name_first_word_lower%Beta",
     "license_file": "LICENSE",
     "readme_file": "README.md"
 }
