@@ -2,12 +2,7 @@
 
 . scripts/shared_funcs.sh
 
-filehooks_path="$(load_config_entry filehooks_path)"
 mod_name="$(load_config_entry mod_name)"
-lua_dir="$(load_config_entry lua_dir)"
-balance_lua_file="$(load_config_entry balance_lua_file)"
-
-install_path="get_ns2_install_path"
 
 revision="$(get_revision)"
 beta_revision="$(get_beta_revision)"
@@ -27,12 +22,6 @@ if [ "$beta_revision" -ne 0 ]; then
 fi
 
 python3 scripts/docugen.py gen \
-    "$lua_dir" \
-    "$install_path/ns2/lua" \
-    "$mod_balance_path" \
-    "$install_path/ns2/lua/Balance.lua" \
-    "$install_path/ns2/lua/BalanceHealth.lua" \
-    "$install_path/ns2/lua/BalanceMisc.lua" \
     "$vanilla_build" \
     $revision_args
 
