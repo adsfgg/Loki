@@ -4,7 +4,7 @@
     "lua_dir": "src/lua",
     "mod_src_dir": "src/lua/%mod_name%",
     "filehooks_path": "src/lua/%mod_name%_FileHooks.lua",
-    "balance_lua_file": "src/lua/%mod_name%/Globals/Balance.lua",
+    "balance_lua_file": "src/lua/%mod_name%/Balance.lua",
     "build_dir": "build",
     "launchpad_data_dir": "launchpad",
     "revision_variable": "g_%mod_name_first_word_lower%Revision",
