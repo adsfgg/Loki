@@ -28,7 +28,7 @@ beta_revision_variable="$(load_config_entry beta_revision_variable)"
 balance_lua_file="$(load_config_entry balance_lua_file | cut -c 5-)"
 
 # Setup src/ structure
-mkdir -p "src/$mod_name/"
+mkdir -p "src/lua/$mod_name/"
 
 # Setup Balance.lua
 filepath="src/$mod_name/Balance.lua"
