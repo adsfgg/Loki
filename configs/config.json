@@ -1,7 +1,7 @@
 {
     "mod_name": "MyMod",
     "src_dir": "src",
-    "lua_dur": "src/lua",
+    "lua_dir": "src/lua",
     "mod_src_dir": "src/lua/MyMod",
     "filehooks_path": "src/lua/MyMod_FileHooks.lua",
     "balance_lua_file": "src/lua/MyMod/Globals/Balance.lua",
