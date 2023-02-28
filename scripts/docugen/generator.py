@@ -96,7 +96,7 @@ def create_index_page(mod_name, mod_version, beta_version):
     is_beta = beta_version > 0
     index_data = docugen_config["index_data"]["beta" if is_beta else "release"]
     with open("docs/index.md", "w+") as f:
-        f.write(index_data["title"].format(mod_version, beta_version))
+        f.write(index_data["title"].format(mod_name, mod_version, beta_version))
         for line in index_data["body"]:
             f.write(line)
         f.write("# Changes\n")
