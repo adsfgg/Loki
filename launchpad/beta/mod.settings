@@ -1,0 +1,13 @@
+name        = "MyMod (Beta)"
+source_dir  = "source/"
+output_dir  = "output/"
+description = [=[
+    A Natural Selection 2 balance and feature mod
+
+    Beta release
+
+    Current revision: %%revision_string%%
+]=]
+image       = "preview.jpg"
+tag_modtype = "Gameplay Tweak"
+tag_support = "Must be run on Server"
