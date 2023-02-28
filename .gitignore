@@ -1,3 +1,4 @@
 build
+configs/local_config.json
 scripts/__pycache__
 scripts/**/__pycache__
