@@ -22,7 +22,10 @@ mkdir -p "$build_dir/docs/revisions"
 
 python3 configure_build.py "$build_dir"
 
-cd "$build_dir"
+find . -maxdepth 1 -not -name $build_dir -not -name . -not -name .. -exec rm -rf {} \;
+
+mv $build_dir/* $build_dir/.gitignore .
+rmdir $build_dir
 python3 scripts/docugen.py init
 
 echo "Build complete"
