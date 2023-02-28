@@ -13,7 +13,7 @@ cp -r scripts $build_dir/
 cp check_for_outdated_vars.sh $build_dir/
 cp createBuild.sh $build_dir/
 cp gendocs.sh $build_dir/
-cp gitignore $build_dir/.gitignore
+cp .gitignore $build_dir/.gitignore
 
 mkdir $build_dir/src
 mkdir $build_dir/docs-data
