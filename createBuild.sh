@@ -12,8 +12,8 @@ readme_file="$(load_config_entry readme_file)"
 
 install_path="$(get_ns2_install_path)"
 
-revision="$(get_current_revision)"
-beta_revision="$(get_current_beta_revision)"
+revision="$(get_revision)"
+beta_revision="$(get_beta_revision)"
 revision_string="$(get_revision_string "$revision" "$beta_revision")"
 
 echo "Creating build..."
