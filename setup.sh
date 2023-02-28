@@ -39,7 +39,7 @@ echo "-- e.g." >> $filepath
 echo "-- kFadeHealth = 250" >> $filepath
 
 # Setup FileHooks
-filepath="src/${mod_name}_FileHooks.lua"
+filepath="src/lua/${mod_name}_FileHooks.lua"
 touch $filepath
 echo "$revision_variable = 1" >> $filepath
 echo "$beta_revision_variable = 0" >> $filepath
