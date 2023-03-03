@@ -13,6 +13,7 @@ cp -r scripts "$build_dir/"
 cp check_for_outdated_vars.sh "$build_dir/"
 cp createBuild.sh "$build_dir/"
 cp gendocs.sh "$build_dir/"
+cp .loki "$build_dir/.loki"
 cp .gitignore "$build_dir/.gitignore"
 echo "configs/local_config.json" >> "$build_dir/.gitignore"
 
