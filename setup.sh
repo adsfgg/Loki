@@ -53,7 +53,7 @@ echo >> $filepath
 cd ..
 find . -maxdepth 1 -not -name $build_dir -not -name . -not -name .. -exec rm -rf {} \;
 
-mv $build_dir/* $build_dir/.gitignore .
+mv $build_dir/* $build_dir/.gitignore $build_dir/.loki .
 rmdir $build_dir
 python3 scripts/docugen.py init
 
