@@ -7,7 +7,7 @@ trap 'on_error' ERR
 function on_error() {
     rc=$?
     echo
-    echo "ERROR at line ${LINENO} (rc: $rc)"
+    echo "======== ERROR ========"
     echo "The installation did NOT complete successfully"
     exit $rc
 }
