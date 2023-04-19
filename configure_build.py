@@ -51,8 +51,8 @@ def main():
 
     # Setup mod.settings
     lines = None
-    filepath = pathlib.Path("launchpad", "mod.settings")
-    template = pathlib.Path("launchpad", "mod.settings.template")
+    filepath = pathlib.Path("launchpad", "prod", "mod.settings")
+    template = pathlib.Path("launchpad", "prod", "mod.settings.template")
     with open(template, "r") as f:
         lines = f.readlines()
     with open(filepath, "w") as f:
