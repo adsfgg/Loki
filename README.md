@@ -6,7 +6,7 @@ A framework for creating Natural Selection 2 gameplay modifications
 To setup a Loki project, create a new directory, cd into it, and run:
 
 ```bash
-curl -L https://raw.githubusercontent.com/adsfgg/Loki/master/setup.sh | bash -
+curl -L https://raw.githubusercontent.com/adsfgg/Loki/master/setup.sh > setup.sh && bash setup.sh && rm setup.sh
 ```
 
 This will setup a basic project that you will be able to use to build your mod
