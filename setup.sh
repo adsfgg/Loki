@@ -35,8 +35,6 @@ function copy_release_data_to_dir() {
 
     cp "$temp_install_dir/create_build.sh" .
     cp "$temp_install_dir/.gitignore" .
-
-    mkdir docs
 }
 
 function setup_project() {
