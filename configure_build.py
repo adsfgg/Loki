@@ -1,24 +1,7 @@
 import pathlib
 
-def expand_variables(value, vars : dict):
-    if type(value) is str:
-        for key in vars.keys():
-            value = value.replace(key, vars[key])
-    return value
-
-
-def get_variable_from_user(name : str, default : str):
-    value = None
-    while True:
-        value = input(f"Enter value for {name} (default: {default}): ")
-        if value:
-            break
-        print(f"\n{name} cannot be blank\n")
-    return value
-
-
 def main():
-    mod_name = get_variable_from_user("mod_name", "MyMod")
+    mod_name = input("Enter mod name: ")
     mod_name_lower_first = mod_name[0].lower() + mod_name[1:]
 
     # Setup dir structure
@@ -51,8 +34,8 @@ def main():
 
     # Setup mod.settings
     lines = None
-    filepath = pathlib.Path("launchpad", "mod.settings")
-    template = pathlib.Path("launchpad", "mod.settings.template")
+    filepath = pathlib.Path("launchpad", "prod", "mod.settings")
+    template = pathlib.Path("launchpad", "prod", "mod.settings.template")
     with open(template, "r") as f:
         lines = f.readlines()
     with open(filepath, "w") as f:
